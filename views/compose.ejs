@@ -1,0 +1,23 @@
+<%-include("./partials/header")-%>
+<h1>Compose</h1>
+<div class="container">
+  <div class="row">
+    <form action="/compose" method="post">
+            <div class="form-group">
+            <div class="mb-3">
+              <label for="Title" class="form-label">Title</label>
+              <input type="text" name="postTitle" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="post" class="form-label">Post</label>
+              <!-- <input type="password" class="form-control" id="exampleInputPassword1"> -->
+              <textarea name="postDesc" class="form-control" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          
+    </form>
+  </div>
+</div>
+
+<%-include("./partials/footer")-%>
